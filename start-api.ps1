@@ -5,7 +5,7 @@ param (
     [string]$CuebotHostname = "opencue-cuebot",
     [string]$CuebotPort = "8443",
     [string]$ApiName = "opencue-api",
-    [string]$Network = "cuebot-server_opencue-network",
+    [string]$Network = "cuebot_opencue-network",
     [switch]$Build,
     [switch]$Help
 )
@@ -20,7 +20,7 @@ if ($Help) {
     Write-Host "                     - For different machines: use the actual IP address or hostname"
     Write-Host "  -CuebotPort        The port to connect to on the Cuebot server (default: 8443)"
     Write-Host "  -ApiName           The name to give to the API container (default: opencue-api)"
-    Write-Host "  -Network           Docker network to connect to (default: cuebot-server_opencue-network)"
+    Write-Host "  -Network           Docker network to connect to (default: cuebot_opencue-network)"
     Write-Host "  -Build             Build the Docker image locally instead of using pre-built"
     Write-Host "  -Help              Display this help message"
     exit 0

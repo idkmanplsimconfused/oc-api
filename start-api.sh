@@ -11,7 +11,7 @@ show_help() {
     echo "                                  - For different machines: use the actual IP address or hostname"
     echo "  -p, --cuebot-port PORT          The port to connect to on the Cuebot server (default: 8443)"
     echo "  -n, --name NAME                 The name to give to the API container (default: opencue-api)"
-    echo "  -w, --network NETWORK           Docker network to connect to (default: cuebot-server_opencue-network)"
+    echo "  -w, --network NETWORK           Docker network to connect to (default: cuebot_opencue-network)"
     echo "  -b, --build                     Build the Docker image locally instead of using pre-built"
     echo "  -h, --help                      Display this help message"
     exit 0
@@ -21,7 +21,7 @@ show_help() {
 CUEBOT_HOSTNAME="opencue-cuebot"
 CUEBOT_PORT="8443"
 API_NAME="opencue-api"
-NETWORK="cuebot-server_opencue-network"
+NETWORK="cuebot_opencue-network"
 BUILD=false
 
 while [[ $# -gt 0 ]]; do
